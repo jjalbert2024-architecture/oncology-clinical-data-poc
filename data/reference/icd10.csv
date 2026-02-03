@@ -1,0 +1,5 @@
+code,description,cancer_type
+C50.9,Breast cancer,Breast
+C34.1,Lung cancer,Lung
+C18.9,Colon cancer,Colon
+C61,Prostate cancer,Prostate
