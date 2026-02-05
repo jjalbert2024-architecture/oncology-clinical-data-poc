@@ -136,3 +136,14 @@ Preview of the curated, filtered dataset after applying clinical and data qualit
 
 ![img_4.png](img_4.png)
 ---
+## 🧰 Tech Stack
+
+- **Language:** Python
+- **Data Processing:** Pandas
+- **Data Quality & Validation:** Rule-based checks (Python)
+- **Analytics Dataset:** CSV (Curated / Gold layer)
+- **Dashboard:** Streamlit
+- **Development Environment:** IntelliJ IDEA
+- **Version Control:** Git & GitHub
+
+Designed to be **fully local, reproducible, and cloud-ready by architecture**.
