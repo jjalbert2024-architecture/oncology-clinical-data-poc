@@ -96,3 +96,26 @@ This dataset represents the **trusted analytics layer** produced after profiling
     - `REVIEW_NEEDED`
 
 This dataset functions as a **Gold / Delta analytics layer**, suitable for reporting and dashboards.
+
+## 🖥️ Dashboard Preview
+
+Below are sample views from the interactive Streamlit dashboard, demonstrating how clinical users can safely explore oncology data.
+
+### 🔎 Clinical Filters
+Clinical and data quality filters allow users to focus on specific cohorts while maintaining data trust.
+
+![img_1.png](img_1.png)
+
+---
+
+### 🧬 Oncology Clinical Analytics Dashboard
+High-level overview of oncology diagnoses with standardized clinical attributes and reconciliation status.
+
+![img.png](img.png)![Oncology Clinical Analytics Dashboard](docs/screenshots/dashboard_overview.png)
+
+---
+
+### 📊 Filtered Dataset Preview
+Preview of the curated, filtered dataset after applying clinical and data quality filters.
+
+![img_2.png](img_2.png)
