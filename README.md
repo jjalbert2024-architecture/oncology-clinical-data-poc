@@ -62,3 +62,15 @@ oncology-clinical-data-poc/
 └── README.md
 ```
 
+## 🧪 Key Data Quality Rules
+
+The following data quality rules are applied to ensure **clinical accuracy, trust, and usability** of oncology data:
+
+| Rule | Severity | Description |
+|------|----------|-------------|
+| Valid ICD-10 Code | Critical | Diagnosis must map to a valid ICD-10 reference |
+| Cancer Stage Present | Critical | Oncology staging is mandatory for analysis |
+| Diagnosis Date Sanity | Warning | Diagnosis date cannot be in the future |
+| Patient Reference Integrity | Critical | Diagnosis must link to a valid patient |
+
+Each rule is **clinically meaningful, measurable, and explainable** to both technical and non-technical stakeholders.
