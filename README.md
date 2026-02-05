@@ -37,4 +37,28 @@ Analytics & Dashboard (Streamlit)
 > This design maps cleanly to cloud-native architectures  
 > (ADLS → Synapse Spark → Delta Lake → Serverless SQL).
 
+## 📂 Project Structure
+
+```text
+oncology-clinical-data-poc/
+│
+├── dashboard/
+│   └── app.py                  # Streamlit analytics dashboard
+│
+├── data/
+│   ├── raw/                    # Raw clinical datasets
+│   ├── reference/              # ICD-10 and clinical reference data
+│   └── curated/                # Analytics-ready datasets
+│
+├── src/
+│   ├── data_generation/        # Synthetic data generation
+│   ├── profiling/              # Data profiling & exploration
+│   ├── quality/                # Data quality rules
+│   └── reconciliation/         # Source-to-reference reconciliation
+│
+├── docs/                       # Clinical & business documentation
+├── sql/                        # SQL-based analysis (optional)
+├── requirements.txt
+└── README.md
+```
 
