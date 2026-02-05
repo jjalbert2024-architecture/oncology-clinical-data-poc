@@ -1,29 +1,40 @@
-## Oncology Clinical Data POC
+# 🧬 Oncology Clinical Analytics POC
 
-### Objective
-Demonstrate clinical data quality, profiling, and reconciliation
-patterns used in oncology analytics pipelines.
+## Overview
+This project demonstrates a **clinical data analytics workflow** commonly used in **oncology and healthcare data platforms**. It focuses on **data quality, standardization, reconciliation, and safe analytics consumption**, ending with an **interactive Streamlit dashboard** suitable for clinical and business stakeholders.
 
-### Key Data Quality Rules
-- ICD-10 code validation
-- Mandatory cancer staging
-- Diagnosis date sanity checks
-- Patient reference integrity
+The POC mirrors real-world patterns used in **EHR / oncology analytics pipelines**, while remaining **fully local, reproducible, and cost-free**.
 
-### Project Structure
-- src/profiling – data profiling checks
-- src/quality – rule-based validations
-- src/reconciliation – source-to-source checks
-- docs – business and clinical rules
+---
 
-### Tech Stack
-- Python
-- Pandas
-- PySpark (future)
-- Snowflake-ready design
+## 🎯 Objectives
+- Ingest raw clinical encounter data
+- Standardize clinical terminology (ICD-10)
+- Profile and validate oncology datasets
+- Apply rule-based data quality checks
+- Reconcile clinical records against reference data
+- Produce a **curated analytics dataset**
+- Present insights via an **interactive Streamlit dashboard**
+- Surface **data trust context** alongside analytics
 
-### How to Run
-```bash
-pip install -r requirements.txt
-python src/profiling/data_profiling.py
+---
+
+## 🏗️ High-Level Architecture (Conceptual)
+```text
+Clinical Source Files (CSV / JSON)
+        ↓
+RAW Layer (data/raw)
+        ↓
+Profiling & Validation (Python)
+        ↓
+Reconciliation & Quality Rules
+        ↓
+CURATED Layer (data/curated)
+        ↓
+Analytics & Dashboard (Streamlit)
+```
+
+> This design maps cleanly to cloud-native architectures  
+> (ADLS → Synapse Spark → Delta Lake → Serverless SQL).
+
 
