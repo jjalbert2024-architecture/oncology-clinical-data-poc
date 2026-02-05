@@ -97,6 +97,19 @@ This dataset represents the **trusted analytics layer** produced after profiling
 
 This dataset functions as a **Gold / Delta analytics layer**, suitable for reporting and dashboards.
 
+## 📊 Interactive Dashboard (Streamlit)
+
+The curated analytics dataset is consumed through an **interactive Streamlit dashboard** designed for clinical and business users.
+
+The dashboard enables:
+- Safe exploration of oncology data
+- Clinical cohort analysis
+- Visibility into data quality and trust
+- Clear separation between raw data and analytics consumption
+
+This mirrors how analytics teams expose **trusted clinical data** to downstream users in real-world healthcare platforms.
+
+
 ## ▶️ Running the Dashboard Locally
 
 The interactive dashboard is built using **Streamlit**, a lightweight framework for creating data applications in Python.
