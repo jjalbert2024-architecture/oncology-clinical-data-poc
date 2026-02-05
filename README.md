@@ -97,25 +97,29 @@ This dataset represents the **trusted analytics layer** produced after profiling
 
 This dataset functions as a **Gold / Delta analytics layer**, suitable for reporting and dashboards.
 
+## ▶️ Running the Dashboard Locally
+
+The interactive dashboard is built using **Streamlit**, a lightweight framework for creating data applications in Python.
+
+### Run the dashboard
+From the project root directory, execute:
+
+```bash
+streamlit run dashboard/app.py
+```
+---
 ## 🖥️ Dashboard Preview
 
 Below are sample views from the interactive Streamlit dashboard, demonstrating how clinical users can safely explore oncology data.
 
-### 🔎 Clinical Filters
-Clinical and data quality filters allow users to focus on specific cohorts while maintaining data trust.
-
-![img_1.png](img_1.png)
-
 ---
-
 ### 🧬 Oncology Clinical Analytics Dashboard
 High-level overview of oncology diagnoses with standardized clinical attributes and reconciliation status.
 
-![img.png](img.png)![Oncology Clinical Analytics Dashboard](docs/screenshots/dashboard_overview.png)
-
+![img_3.png](img_3.png)
 ---
-
 ### 📊 Filtered Dataset Preview
 Preview of the curated, filtered dataset after applying clinical and data quality filters.
 
-![img_2.png](img_2.png)
+![img_4.png](img_4.png)
+---
