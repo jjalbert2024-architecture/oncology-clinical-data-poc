@@ -74,3 +74,25 @@ The following data quality rules are applied to ensure **clinical accuracy, trus
 | Patient Reference Integrity | Critical | Diagnosis must link to a valid patient |
 
 Each rule is **clinically meaningful, measurable, and explainable** to both technical and non-technical stakeholders.
+
+## 🧬 Curated Analytics Dataset
+
+**File:** `data/curated/oncology_analytics.csv`
+
+This dataset represents the **trusted analytics layer** produced after profiling, validation, and reconciliation.
+
+### Includes:
+- Clinical attributes:
+    - Cancer type
+    - Cancer stage
+    - Diagnosis date
+- Standardized clinical terminology (ICD-10)
+- Reconciliation status:
+    - `MAPPED`
+    - `UNMAPPED`
+- Explicit data quality flags
+- Derived trust indicator:
+    - `TRUSTED`
+    - `REVIEW_NEEDED`
+
+This dataset functions as a **Gold / Delta analytics layer**, suitable for reporting and dashboards.
